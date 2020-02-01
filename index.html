@@ -20,189 +20,95 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-primary">
+  <nav class="navbar navbar-dark primary_bg">
     <a class="navbar-brand" href="#">
       <i class="fas fa-smile text-warning"></i>
-      <span>Code Bay Test</span>
+      <span class="text_grey">Code Bay Test</span>
     </a>
     <form class="form-inline">
 
-      <span mx-5 class="badge badge-secondary">1</span>
-
-      <!-- <button type="button" class="btn btn-lg btn-outline-light" 
-        data-toggle="modal" data-target="#exampleModal">
-        
-      </button> -->
-
-      <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#staticBackdrop">
-        <i class="fas fa-shopping-cart text-secondary"></i>
+      <span mx-5 class="badge badge-light text_secondary mx-1 ">12</span>
+      <button type="button" class="btn btn-lg btn-light  mx-2" data-toggle="modal" data-target="#staticBackdrop">
+        <i class="fas fa-shopping-cart text_secondary"></i>
       </button>
-      <!-- 
-   <button type="button" class="btn btn-lg btn-outline-light" 
-   data-toggle="popover" title="Popover title"
-    data-content="And here's some amazing content. It's very engaging. Right?">
-    <img src="assets/shopping-cart.svg" width="30" height="30" alt="">
-   </button> -->
 
-      <div class="dropdown">
-        <a class="btn btn-lg btn-outline-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-shopping-cart text-secondary"></i>
-        </a>
-
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <!-- SHOPPING CART -->
-          <div class="card shopping-case">
-            <div class="card-header">
-              <strong> Buy (1 item)</strong>
-            </div>
-            <div class="card-body">
-              <div class="d-flex bd-highlight  card-title">
-                <div class=" bd-highlight">
-                  <h5>Special title treatment</h5>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <a href="" class="text-secondary">
-                    <i class="fas fa-info-circle text-secondary"></i>more Info</a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="assets/img/900.jpg" alt="item" width="100" height="100">
-                </div>
-                <div class="col-md-6">
-                  <ul class="lista">
-                    <li>
-                      <h3>Item Name (just by me)</h3>Item
-                    </li>
-                    <li><span class="badge badge-info">best by article</span> in some category</li>
-                    <li>
-                      <p>In stock</p>
-                    </li>
-                    <li>
-                      <p><strong>Free shipping</strong> available </p>
-                    </li>
-                    <li>
-                      <div class="d-flex flex-row bd-highlight mb-3">
-                        <div class="p-2 bd-highlight"><a href="">Delete</a></div>
-                        <div class="p-2 bd-highlight"><a href="">ser mor similar items</a></div>
-                        <div class="p-2 bd-highlight"><a href="">save for later</a></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-2">
-                  <h3>Cantidad 1</h3>
-                  <span>
-                    <a href=""> see description</a>
-                  </span>
-                </div>
-                <div class="col-md-2">
-                  <h2>$ 7,99</h2>
-                </div>
-              </div>
-              <!--row  -->
-              <div class="d-flex bd-highlight  card-title">
-                <div class=" bd-highlight">
-                  <button type="button" class="btn btn-outline-danger">Delete Item</button>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <button type="button" class="btn btn-outline-success">
-                    <i class="fas fa-shopping-cart text-secondary"></i>
-                    continue shopping</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- SHOPPING CART -->
-        </div>
-      </div>
-
-
-
-      <a class="nav-link text-secondary" href="#">
-        <i class="fas fa-user text-secondary"></i>
-        <span>Account</span>
+      <a class="nav-link color_grey" href="#">
+        <i class="fas fa-user "></i>
+        <span class="text_grey">Account</span>
       </a>
 
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </nav>
 
-
-  <div>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;"">
+  <!-- style="background-color: #e3f2fd;" -->
+  <!-- nav bar -->
+  <nav class="navbar navbar-light light_bg elevation shadow p-2 mb-3 rounded">
     <a class=" navbar-brand" href="#">
-      <span class="title">
+      <span class="title text_primary">
         <h1>Big title</h1>
       </span>
-      </a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Event</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Accesories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Apparel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Feature Items</a>
-      </ul>
-    </nav>
-  </div>
+    </a>
+    <!-- active -->
+    <ul class="nav justify-content-end navigation">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accesories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Apparel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Feature Items</a>
+    </ul>
+  </nav>
 
   <!-- divisor -->
+  <!-- <div class="m-1"></div> -->
 
+  <div class="slideshow-container  shadow p-1 mb-1 ">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="http://placekitten.com/g/1000/600">
+      <div class="text">Caption Text</div>
+    </div>
 
-  <div class="m-4  p-2" style="background-color: rgb(236, 13, 13);"></div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="http://placekitten.com/1000/600">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="http://placekitten.com/g/1000/600">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
   <div class="container">
-
-    <div class="slideshow-container">
-
-      <div class="mySlides ">
-        <div class="numbertext">1 / 3</div>
-        <img src="http://placekitten.com/g/1000/600">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides ">
-        <div class="numbertext">2 / 3</div>
-        <img src="http://placekitten.com/1000/600">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides ">
-        <div class="numbertext">3 / 3</div>
-        <img src="http://placekitten.com/g/1000/600">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
     <!-- carrussel -->
     <!-- <div class="w-auto p-3" style="background-color: #eee;"></div> -->
     <!-- divisor -->
-    <div class="m-4  p-2" style="background-color: rgb(236, 13, 13);"></div>
+    <div class="m-4  p-2"></div>
 
     <!-- product  -->
     <div class="row">
@@ -217,7 +123,7 @@
       </section>
 
       <div class="col-lg-3">
-        <div class="card" style="width: 100%;">
+        <div class="card">
           <!-- <img src="..." class="card-img-top" alt="..."> -->
           <svg class="bd-placeholder-img img-fluid" width="100%" height="300" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
@@ -306,7 +212,7 @@
         <h4><strong>Quick Links</strong></h4>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Events</a>
@@ -337,7 +243,7 @@
     </div>
   </nav>
   <!-- fixed-bottom -->
-  <div class=" row justify-content-center">
+  <!-- <div class=" row justify-content-center">
     <p class="text-muted text-center">
       @2020 AcmeWidgdets
       <span>
@@ -345,11 +251,13 @@
       </span>
       <span>support acmewidgdets@suport.com</span>
     </p>
-  </div>
+  </div> -->
 
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>© 2017-2019 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  <footer class="container my-4">
+
+    <p class="text-muted">@2020 Company, Inc. · <a href="#">Privacy</a> ·
+      <span>support acmewidgdets@suport.com</span><a href="#">Back to top</a>
+    </p>
   </footer>
 </body>
 
@@ -360,7 +268,7 @@
 
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Shooping Cart</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -372,50 +280,50 @@
             <strong> Buy (1 item)</strong>
           </div>
           <div class="card-body">
-            <div class="d-flex bd-highlight  card-title">
-              <div class=" bd-highlight">
-                <h5>Special title treatment</h5>
+            <div class="row card-title">
+              <div class="col-md-6 bd-highlight">
+                <p>Item Title</p>
               </div>
-              <div class="bd-highlight"></div>
-              <div class="ml-auto  bd-highlight">
-                <a href="" class="text-secondary">
-                  <i class="fas fa-info-circle text-secondary"></i>more Info</a>
+              <div class="col-md-3 bd-highlight">
+                <p>Cantidad</p>
+              </div>
+              <div class="col-md-3 bd-highlight">
+                <p>Price</p>
               </div>
             </div>
-
             <div class="row">
               <div class="col-md-2">
                 <img src="assets/img/900.jpg" alt="item" width="100" height="100">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <ul class="lista">
                   <li>
-                    <h3>Item Name (just by me)</h3>Item
+                    <h5>Item Name </h5>
                   </li>
-                  <li><span class="badge badge-info">best by article</span> in some category</li>
+                  <li><span class="badge badge-info">best by article</span></li>
                   <li>
                     <p>In stock</p>
                   </li>
                   <li>
                     <p><strong>Free shipping</strong> available </p>
                   </li>
-                  <li>
-                    <div class="d-flex flex-row bd-highlight mb-3">
-                      <div class="p-2 bd-highlight"><a href="">Delete</a></div>
-                      <div class="p-2 bd-highlight"><a href="">ser mor similar items</a></div>
-                      <div class="p-2 bd-highlight"><a href="">save for later</a></div>
-                    </div>
-                  </li>
                 </ul>
               </div>
-              <div class="col-md-2">
-                <h3>Cantidad 1</h3>
-                <span>
-                  <a href=""> see description</a>
-                </span>
+
+              <div class="col-md-3">
+                <div class="d-flex flex-row  mb-3">
+                  <button type="button" class="btn secondary_bg text_light btn-sm">+</button>
+                  <h5> 1 </h5>
+                  <button type="button" class="btn secondary_bg text_light btn-sm">-</button>
+                </div>
               </div>
-              <div class="col-md-2">
-                <h2>$ 7,99</h2>
+
+              <div class="col-md-3">
+                <div class="d-flex flex-row bd-highlight mb-3">
+                  <div class="p-2 bd-highlight">
+                    <h5>$ 7,99</h5>
+                  </div>
+                </div>
               </div>
             </div>
             <!--row  -->
@@ -433,20 +341,56 @@
           </div>
         </div>
         <!-- SHOPPING CART -->
-
+        <!--  -->
+        <!-- <div class="card mb-3">
+          <div class=" row no-gutters">
+            <div class="col-md-2">
+              <img src="assets/img/900.jpg" alt="item" width="100" height="100">
+            </div>
+            <div class="col-md-4">
+              <h5 class=" card-title">Card title</h5>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
+
+
     </div>
 
   </div>
+
+
 </div>
 <!-- MODAL shopping-cart -->
 
 </html>
+
+<!--        <li>
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                      <
+                      <div class="p-2 bd-highlight">
+                        <a href="" class="text-secondary"> <i class="fas fa-info-circle text-secondary"></i>
+                          <p>more Info </p>
+                        </a>
+                      </div>
+                    </div>
+                  </li> -->
+<!-- <button type="button" class="btn btn-lg btn-outline-light" 
+data-toggle="popover" title="Popover title"
+ data-content="And here's some amazing content. It's very engaging. Right?">
+ <img src="assets/shopping-cart.svg" width="30" height="30" alt="">
+</button> -->
 
 <!-- justify-content-end -->
 <!-- <form class="navbar navbar-expand-lg navbar-light bg-light "> -->
