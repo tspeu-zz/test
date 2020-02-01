@@ -1,7 +1,13 @@
 
 $(document).ready(function () {
  $('[data-toggle="popover"]').popover()
+
+ $('#exampleModal').trigger('focus')
+
+
+
 })
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
