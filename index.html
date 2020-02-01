@@ -28,14 +28,16 @@
     <form class="form-inline">
 
       <span mx-5 class="badge badge-light text_secondary mx-1 ">12</span>
-      <button type="button" class="btn btn-lg btn-light  mx-2" data-toggle="modal" data-target="#staticBackdrop">
+      <button type="button" class="btn btn-lg btn-light  mx-1" data-toggle="modal" data-target="#staticBackdrop">
         <i class="fas fa-shopping-cart text_secondary"></i>
       </button>
 
-      <a class="nav-link color_grey" href="#">
+      <button type="button" class="btn mx-2 btn-sm btn-outline-light" data-toggle="popover" title="User info"
+        data-content="username : pepe@mail.com">
+
         <i class="fas fa-user "></i>
         <span class="text_grey">Account</span>
-      </a>
+      </button>
 
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
@@ -45,11 +47,9 @@
   <!-- style="background-color: #e3f2fd;" -->
   <!-- nav bar -->
   <nav class="navbar navbar-light light_bg elevation shadow p-2 mb-3 rounded">
-    <a class=" navbar-brand" href="#">
-      <span class="title text_primary">
-        <h1>Big title</h1>
-      </span>
-    </a>
+    <span class=" navbar-brand title text_primary">
+      <h1>Big title</h1>
+    </span>
     <!-- active -->
     <ul class="nav justify-content-end navigation">
       <li class="nav-item ">
@@ -72,28 +72,28 @@
   <!-- divisor -->
   <!-- <div class="m-1"></div> -->
 
-  <div class="slideshow-container  shadow p-1 mb-1 ">
+  <div class="slideshow-container shadow p-1 mb-1 ">
 
     <div class="mySlides">
       <div class="numbertext">1 / 3</div>
-      <img src="http://placekitten.com/g/1000/600">
+      <img src="http://placekitten.com/g/1000/400" width="100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 3</div>
-      <img src="http://placekitten.com/1000/600">
+      <img src="http://placekitten.com/1000/400" width="100%">
       <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 3</div>
-      <img src="http://placekitten.com/g/1000/600">
+      <img src="http://placekitten.com/g/1000/600" width="100%">
       <div class="text">Caption Three</div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+    <span class="next" onclick="plusSlides(1)">&#10095;</span>
 
   </div>
   <br>
@@ -376,16 +376,17 @@
 
 </html>
 
-<!--        <li>
-                    <div class="d-flex flex-row bd-highlight mb-3">
-                      <
-                      <div class="p-2 bd-highlight">
-                        <a href="" class="text-secondary"> <i class="fas fa-info-circle text-secondary"></i>
-                          <p>more Info </p>
-                        </a>
-                      </div>
-                    </div>
-                  </li> -->
+<!--        
+<li>
+  <div class="d-flex flex-row bd-highlight mb-3">
+    <
+    <div class="p-2 bd-highlight">
+      <a href="" class="text-secondary"> <i class="fas fa-info-circle text-secondary"></i>
+        <p>more Info </p>
+      </a>
+    </div>
+  </div>
+</li> -->
 <!-- <button type="button" class="btn btn-lg btn-outline-light" 
 data-toggle="popover" title="Popover title"
  data-content="And here's some amazing content. It's very engaging. Right?">
