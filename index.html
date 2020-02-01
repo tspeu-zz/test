@@ -7,7 +7,7 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
  <link rel="stylesheet" href="css/bootstrap.min.css">
- <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/style.scss">
 
  <script defer src="js/jquery-3.4.1.slim.min.js"></script>
  <script defer src="js/popper.min.js"></script>
@@ -26,11 +26,27 @@
   <form class="form-inline">
 
    <span class="badge badge-secondary">12</span>
-
-   <button type="button" class="btn btn-lg btn-outline-light" data-toggle="popover" title="Popover title"
+   <!-- 
+   <button type="button" class="btn btn-lg btn-outline-light" 
+   data-toggle="popover" title="Popover title"
     data-content="And here's some amazing content. It's very engaging. Right?">
     <img src="assets/shopping-cart.svg" width="30" height="30" alt="">
-   </button>
+   </button> -->
+
+   <div class="dropdown">
+    <a class="btn btn-lg btn-outline-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+     aria-haspopup="true" aria-expanded="false">
+     <img src="assets/shopping-cart.svg" width="30" height="30" alt="">
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+     <a class="dropdown-item" href="#">Action</a>
+     <a class="dropdown-item" href="#">Another action</a>
+     <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+   </div>
+
+
 
    <a class="nav-link" href="#">
     <img src="assets/user-circle.svg" width="30" height="30" alt="">
@@ -70,6 +86,79 @@
  </div>
 
  <!-- divisor -->
+
+
+ <div class="card shopping-case">
+  <div class="card-header">
+   Cesta compar (1 artículo)
+  </div>
+  <div class="card-body">
+
+   <div class="row">
+
+
+
+    <div class="d-flex justify-content-end">
+     <h5 class="card-title">Special title treatment</h5>
+     <p>info</p>
+    </div>
+
+   </div>
+   <div class="row">
+    <div class="col-md-2">
+     <img src="assets/img/900.jpg" alt="item" width="100" height="100">
+    </div>
+    <div class="col-md-6">
+     <ul>
+      <li>
+       <h2>Item Name (just by me)</h2>Item
+      </li>
+      <li><span class="badge badge-info">best by article</span> in some category</li>
+      <li>
+       <p>In stock</p>
+      </li>
+      <li>
+       <p><strong>Free shipping</strong> available </p>
+      </li>
+      <li>
+
+       <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight"><a href="">Delete</a></div>
+        <div class="p-2 bd-highlight"><a href="">ser mor similar items</a></div>
+        <div class="p-2 bd-highlight"><a href="">save for later</a></div>
+       </div>
+
+      </li>
+     </ul>
+    </div>
+
+    <div class="col-md-2">
+     <h3>Cantidad 1</h3>
+     <span>
+      <a href=""> see description</a>
+     </span>
+    </div>
+
+    <div class="col-md-2">
+
+     <h2> $ 7,99</h2>
+    </div>
+
+
+   </div>
+   <!--  -->
+   <div class="row">
+
+
+
+   </div>
+   <!--  -->
+  </div>
+
+
+
+ </div>
+
  <div class="m-4  p-2" style="background-color: rgb(236, 13, 13);"></div>
 
  <div class="container">
