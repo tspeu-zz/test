@@ -112,8 +112,11 @@ ul, li {
   color:  #C8CEc4;
 }
 
-// carrusell
+.section {
+  font-family: 'Lato', sans-serif;
+}
 
+// carrusell
 .mySlides {
   display: none;
   width: auto;
@@ -125,11 +128,7 @@ ul, li {
   // max-height: 500px;
   position: relative;
   // margin: auto;
-          img {
-            vertical-align: middle;
-          
-          }
-
+          img { vertical-align: middle;}
 }
 
 /* Next & previous buttons */
@@ -156,9 +155,9 @@ ul, li {
 
 /* On hover, add a background color with a little bit see-through */
 .prev:hover, .next:hover {
-  color: #C8CEc4;
-  background-color: #9baba8;
-
+  background-color: #ebebe7;
+  color: #9baba8;
+}
 /* Caption text */
 .text {
   color: #ebebe7;
@@ -220,16 +219,77 @@ ul, li {
 
 .shopping-case {
 
+  // font-size: .5rem;
+  max-width: 100%;
   .lista ul, li {
     list-style-type : none !important;
     display : inline !important; 
     font-family: Lato, sans-serif; margin:0;
-  
+  }
+  h2 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: .5em;
+  }
+
+  .card-body{
+    padding: .25rem;
+  }
 }
-  font-size: 1.5em;
-  max-width: 100%;
-h2 {
-  font-size: 10px;
+// ********************************* tumbnain list
+.listrap {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+.listrap li {
+  margin: 0;
+  // padding: 10px;
+}
+
+.listrap li.active, .listrap li:hover {
+  background-color: #d9edf7;
+}
+
+.listrap strong {
+  margin-left: 10px;
+}
+
+.listrap .listrap-toggle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.listrap .listrap-toggle span {
+  background-color: #428bca;
+  opacity: 0.8;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  display: none;
+  position: absolute;
+
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.listrap .listrap-toggle span:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+}
+
+.listrap li.active .listrap-toggle span {
+  display: block;
 }
