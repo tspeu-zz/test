@@ -112,7 +112,7 @@
 
     <!-- product  -->
     <div class="row">
-      <section class="text-wrap text_primary">
+      <section class="text-wrap section-text">
         <h2>Intro Copy Headline</h2>
         <p>Lorem ipsum dolor sit amet, dui eros quod, lobortis suspendisse, praesent amet nulla malesuada etiam est
           diam,
@@ -131,7 +131,7 @@
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
               dy=".3em">140x140</text>
           </svg>
-          <div class="card-body">
+          <div class="card-body section-text">
             <h2>Item</h2>
             <p>Item Category </p>
             <p> <strong>$</strong><span>88.00</span></p>
@@ -149,7 +149,7 @@
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
               dy=".3em">140x140</text>
           </svg>
-          <div class="card-body">
+          <div class="card-body section-text">
             <h2>Item</h2>
             <p>Item Category </p>
             <p> <strong>$</strong><span>88.00</span></p>
@@ -160,14 +160,13 @@
 
       <div class="col-lg-3">
         <div class="card shadow">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
           <svg class="bd-placeholder-img img-fluid" width="100%" height=" 300" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
               dy=".3em">140x140</text>
           </svg>
-          <div class="card-body">
+          <div class="card-body section-text">
             <h2>Item</h2>
             <p>Item Category </p>
             <p> <strong>$</strong><span>88.00</span></p>
@@ -185,7 +184,7 @@
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
               dy=".3em">140x140</text>
           </svg>
-          <div class="card-body">
+          <div class="card-body section-text">
             <h2>Item</h2>
             <p>Item Category </p>
             <p> <strong>$</strong><span>88.00</span></p>
@@ -204,30 +203,28 @@
 
 
   <!-- footer -->
-  <nav class="navbar  navbar-light bg-light">
-
+  <nav class="navbar  navbar-light primary_bg footer-text">
     <div class="row">
-
-      <div class="col-4">
-        <h4><strong>Quick Links</strong></h4>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+      <div class="col-3">
+        <h4 class="footer-text"><strong>Quick Links</strong></h4>
+        <ul class="nav flex-column ">
+          <li class="nav-item ">
+            <a class="nav-link color_grey" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link color_grey" href="#">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
+            <a class="nav-link color_grey" href="#">Support</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=" #">Contact</a>
+            <a class="nav-link color_grey" href=" #">Contact</a>
           </li>
         </ul>
       </div>
 
-      <div class="col-4">
-        <h4><strong>Announcements /Promoted Contents</strong></h4>
+      <div class="col-6">
+        <h4 class="footer-text"><strong>Announcements /Promoted Contents</strong></h4>
         <span>
           Lorem ipsum dolor sit amet, dui eros quod, lobortis suspendisse, praesent amet nulla malesuada etiam est diam,
           elit eu in suscipit. Viverra congue dui aliquam dignissim, pede maecenas, iaculis eu torquent vitae velit et,
@@ -235,30 +232,22 @@
         </span>
       </div>
 
-      <div class="col-4 text-right">
-        <h4><strong>Comming Soon</strong></h4>
-        <img src="assets/img/900.jpg" width="200" class="" />
+      <div class="col-3 text-right">
+        <h4 class="footer-text"><strong>Comming Soon</strong></h4>
+        <img src="assets/img/900.jpg" width="200" alt="cat" />
       </div>
-
     </div>
+
   </nav>
+  <div class="copyright text-center text-muted primary_bg">
+    @2020 AcmeWidgdets
+    <span mx-2>Licencia Creative Commons Atribución 4.0 Internacional.
+    </span>
+    <span>support acmewidgdets@suport.com</span>
+  </div>
   <!-- fixed-bottom -->
-  <!-- <div class=" row justify-content-center">
-    <p class="text-muted text-center">
-      @2020 AcmeWidgdets
-      <span>
-        Licencia Creative Commons Atribución 4.0 Internacional.
-      </span>
-      <span>support acmewidgdets@suport.com</span>
-    </p>
-  </div> -->
 
-  <footer class="container my-4">
 
-    <p class="text-muted">@2020 Company, Inc. · <a href="#">Privacy</a> ·
-      <span>support acmewidgdets@suport.com</span><a href="#">Back to top</a>
-    </p>
-  </footer>
 
 
   <!-- MODAL shopping-cart fade-->
@@ -291,32 +280,6 @@
                   <p>Price</p>
                 </div>
               </div>
-
-              <!-- <div class="row">
-                <ul class="listrap">
-                  <li>
-                    <div class="listrap-toggle">
-                      <span></span>
-                      <img src="http://placekitten.com/g/60/60" class="img-circle" />
-                    </div>
-                    <strong>My Lorem Option #1</strong>
-                  </li>
-                  <li class="active">
-                    <div class="listrap-toggle">
-                      <span></span>
-                      <img src="http://placekitten.com/60/60" class="img-circle" />
-                    </div>
-                    <strong>Your Ipsum Option #2</strong>
-                  </li>
-                  <li class="active">
-                    <div class="listrap-toggle">
-                      <span></span>
-                      <img src="http://placekitten.com/g/60/60" class="img-circle" />
-                    </div>
-                    <strong>Their Consectuer Option #3</strong>
-                  </li>
-                </ul>
-              </div> -->
 
               <div class="row">
                 <div class="col-sm-2">
