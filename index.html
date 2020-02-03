@@ -21,12 +21,12 @@
 
 <body>
   <nav class="navbar navbar-dark primary_bg">
-    <div class="text-nav">
-      <span class="navbar-brand" href="#">
-        <i class="fas fa-smile text-warning"></i>
-        <span class="text_grey">Code Bay Test</span>
-      </span>
-    </div>
+
+    <span class="navbar-brand" href="#">
+
+      <span class="text_grey text-nav">Code Bay Test</span>
+    </span>
+
     <form class="form-inline">
       <span mx-5 class="badge badge-light text_secondary mx-1 ">12</span>
 
@@ -40,8 +40,7 @@
         <i class="fas fa-user color_grey"></i>
         <span class="text_grey">Account</span>
       </button>
-      <input class="form-control form-control-sm mr-sm-2 col-xs-2" type="search" placeholder="Search"
-        aria-label="Search">
+      <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-sm btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </nav>
@@ -264,7 +263,7 @@
   <!-- fixed-bottom -->
 
   <!-- MODAL shopping-cart fade-->
-  <div class="modal " id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+  <div class="modal" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-scrollable" role="document">
 
@@ -282,8 +281,8 @@
               <strong> Buy (1 item)</strong>
             </div>
             <div class="card-body">
-              <div class="row card-title">
-                <div class="col-sm-6 bd-highlight">
+              <div class="row card-title modal-item">
+                <div class="col-sm-6 bd-highlight ">
                   <p>Item Title</p>
                 </div>
                 <div class="col-sm-3 bd-highlight">
@@ -293,8 +292,25 @@
                   <p>Price</p>
                 </div>
               </div>
+              <!-- item  320-->
+              <div class="d-flex bd-highlight card-title modal-small">
+                <div class=" bd-highlight">
+                  <img src="assets/img/60_2.jpg" width="100%">
+                  <p>Item Name</p>
+                </div>
+                <div class="bd-highlight"></div>
+                <div class="ml-auto  bd-highlight">
+                  <div class="d-flex flex-row mb-3">
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
+                    <h5 class="p-1"> 10</h5>
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
+                  </div>
+                  <h6>$ 1,99</h6>
+                </div>
+              </div>
+              <!-- item  320-->
 
-              <div class="row">
+              <div class="row modal-item">
                 <div class="col-sm-2">
                   <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
                   <img src="assets/img/60.jpg" width="100%">
@@ -332,9 +348,26 @@
                   <button type="button" class="btn btn-outline-danger">Delete Item</button>
                 </div>
               </div>
-              <!-- item  -->
               <hr>
-              <div class="row">
+              <!-- item  -->
+              <!-- item  320-->
+              <div class="d-flex bd-highlight card-title  modal-small">
+                <div class=" bd-highlight">
+                  <img src="assets/img/60_2.jpg" width="100%">
+                  <p>Item Name</p>
+                </div>
+                <div class="bd-highlight"></div>
+                <div class="ml-auto  bd-highlight">
+                  <div class="d-flex flex-row mb-3">
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
+                    <h5 class="p-1"> 1</h5>
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
+                  </div>
+                  <h6>$ 2,99</h6>
+                </div>
+              </div>
+              <!-- item  320-->
+              <div class="row modal-item">
                 <div class="col-sm-2">
                   <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
                   <img src="assets/img/60_2.jpg" width="100%">
@@ -372,9 +405,26 @@
                   <button type="button" class="btn btn-outline-danger">Delete Item</button>
                 </div>
               </div>
-              <!-- item  -->
               <hr>
-              <div class="row">
+              <!-- item  -->
+              <!-- item  320-->
+              <div class="d-flex bd-highlight card-title  modal-small">
+                <div class=" bd-highlight">
+                  <img src="assets/img/60_2.jpg" width="100%">
+                  <p>Item Name</p>
+                </div>
+                <div class="bd-highlight"></div>
+                <div class="ml-auto  bd-highlight">
+                  <div class="d-flex flex-row mb-3">
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
+                    <h5 class="p-1"> 1</h5>
+                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
+                  </div>
+                  <h6>$ 5,99</h6>
+                </div>
+              </div>
+              <!-- item  320-->
+              <div class="row modal-item">
                 <div class="col-sm-2">
                   <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
                   <img src="assets/img/60.jpg" width="100%">
@@ -412,132 +462,26 @@
                   <button type="button" class="btn btn-outline-danger">Delete Item</button>
                 </div>
               </div>
+              <hr>
               <!-- item  -->
-
             </div> <!-- card-body -->
           </div> <!-- card  -->
-          <!-- SHOPPING CART -->
-        </div>
+        </div> <!-- SHOPPING CART -->
         <div class="modal-footer d-flex">
-
           <div class=" bd-highlight">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
           <div class="bd-highlight"></div>
           <div class="ml-auto  bd-highlight">
             <button type="button" class="btn btn-outline-success">
-              <i class="fas fa-shopping-cart text-secondary"></i>
+              <i class="fas fa-shopping-cart text-secondary modal-item"></i>
               continue shopping</button>
           </div>
-
         </div>
       </div> <!-- modal-content -->
     </div> <!-- modal-dialog -->
   </div> <!-- MODAL  -->
-  <!--  -->
 
-
-  <!--  -->
 </body>
 
 </html>
-
-
-<!--          
-<<div class="card mb-3">
-      <div class=" row no-gutters">
-        <div class="col-md-2">
-          <img src="assets/img/900.jpg" alt="item" width="100" height="100">
-        </div>
-        <div class="col-md-4">
-          <h5 class=" card-title">Card title</h5>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural 
-              lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-<!--  <div class="row">
-    <ul class="listrap">
-      <li>
-        <div class="listrap-toggle">
-          <span></span>
-          <img src="http://lorempixel.com/60/60/people/?v=1" class="img-circle" />
-        </div>
-        <strong>My Lorem Option #1</strong>
-      </li>
-      <li class="active">
-        <div class="listrap-toggle">
-          <span></span>
-          <img src="http://lorempixel.com/60/60/people/?v=2" class="img-circle" />
-        </div>
-        <strong>Your Ipsum Option #2</strong>
-      </li>
-      <li class="active">
-        <div class="listrap-toggle">
-          <span></span>
-          <img src="http://lorempixel.com/60/60/people/?v=3" class="img-circle" />
-        </div>
-        <strong>Their Consectuer Option #3</strong>
-      </li>
-    </ul>
-  </div> -->
-<!--        
-<li>
-  <div class="d-flex flex-row bd-highlight mb-3">
-    <
-    <div class="p-2 bd-highlight">
-      <a href="" class="text-secondary"> <i class="fas fa-info-circle text-secondary"></i>
-        <p>more Info </p>
-      </a>
-    </div>
-  </div>
-</li> -->
-<!-- <button type="button" class="btn btn-lg btn-outline-light" 
-data-toggle="popover" title="Popover title"
- data-content="And here's some amazing content. It's very engaging. Right?">
- <img src="assets/shopping-cart.svg" width="30" height="30" alt="">
-</button> -->
-
-<!-- justify-content-end -->
-<!-- <form class="navbar navbar-expand-lg navbar-light bg-light "> -->
-<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
- </button> -->
-<!-- <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent"> -->
-<!-- <ul class="navbar-nav justify-content-end">
-  <li class="nav-item active">
-   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-  </li>
-  <li class="nav-item">
-   <a class="nav-link" href="#">Event</a>
-  </li>
-  <li class="nav-item">
-   <a class="nav-link" href="#">Accesories</a>
-  </li>
-  <li class="nav-item">
-   <a class="nav-link" href="#">Apparel</a>
-  </li>
-  <li class="nav-item">
-   <a class="nav-link" href="#">Feature Items</a>
-  </li>
- </ul> -->
-
-<!-- </form> -->
-<!-- 
- <li class="nav-item dropdown">
-     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-     aria-haspopup="true" aria-expanded="false"> Dropdown
-     </a>
-     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Something else here</a>
-     </div>
-    </li> -->

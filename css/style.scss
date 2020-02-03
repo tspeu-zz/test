@@ -48,14 +48,13 @@ body {
   background-color: #ebebe7;
  // background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
  // background-repeat:repeat;
-  // font-size: calc(14px +(26-14) *(100vw -300px) / (1600 - 300) );
-
 }
-.small-menu{ display: none; } 
+.small-menu {display: none; } 
 .large-menu {display: inline;}
+.modal-small{display: none;}
 
 @media screen and (max-width: 678px) { 
-  .small-menu{ display: none; } 
+  .small-menu { display: none;} 
   .large-menu {display: inline;}
   h1{
     font-size: 3.5vw;
@@ -63,25 +62,31 @@ body {
   nav{
     font-size: 2.5vw;
   }
+  .text-nav { display: none;} 
+  .modal-small{display: none;}
+  
 }
+@media screen and (max-width: 576px) { 
+  .modal-small{display: none;}
+}
+
 
 /* On screens that are 768px wide or less, go from four columns to two columns */
 @media screen and(min-width:576) and (max-width: 678px) { 
-  .small-menu { display: none; } 
+  .small-menu { display: none;} 
   .large-menu {display: inline;}
   h1{
-    font-size: 2vw;
+    font-size: 3vw;
   }
-  
+  .modal-small{display: none;}
 }
 
 @media screen and (max-width: 576px) and (min-width: 320px) { 
   .small-menu{ display: inline; font-size: 4vw; } 
   .large-menu {display: none;}
   .text-nav { display: none; }
-  // h1 {
-  //   font-size: 4vw;
-  // }
+  .form-control {max-width: 20vw;}
+  .modal-item {display: none;}
 }
 
 @media screen and (max-width: 320px)  { 
@@ -89,11 +94,12 @@ body {
   .large-menu {display: none;}
   .carrusell-slide {display: none;}
   .img-fluid { height: 150px;}
-
-  //font-size: calc(16px + 6 +((100vw - 320px)/680));
+  .form-control {max-width: 20%;}
+  
+  img { width: 50%;}
+  .modal-item {display: none;}
   
 }
-
 
 
 a {
@@ -125,7 +131,6 @@ ul, li {
 }
 
 .primary_bg{
-  // background-color: $primary-bg;
   background-color: #333333;
 }
 .secondary_bg{
