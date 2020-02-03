@@ -21,13 +21,15 @@
 
 <body>
   <nav class="navbar navbar-dark primary_bg">
-    <span class="navbar-brand" href="#">
-      <i class="fas fa-smile text-warning"></i>
-      <span class="text_grey">Code Bay Test</span>
-    </span>
+    <div class="text-nav">
+      <span class="navbar-brand" href="#">
+        <i class="fas fa-smile text-warning"></i>
+        <span class="text_grey">Code Bay Test</span>
+      </span>
+    </div>
     <form class="form-inline">
-
       <span mx-5 class="badge badge-light text_secondary mx-1 ">12</span>
+
       <button type="button" class="btn btn-sm btn-outline-light mx-1" data-toggle="modal" data-target="#staticBackdrop">
         <i class="fas fa-shopping-cart color_grey"></i>
       </button>
@@ -38,8 +40,8 @@
         <i class="fas fa-user color_grey"></i>
         <span class="text_grey">Account</span>
       </button>
-
-      <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control form-control-sm mr-sm-2 col-xs-2" type="search" placeholder="Search"
+        aria-label="Search">
       <button class="btn btn-sm btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </nav>
@@ -51,102 +53,113 @@
       <h1>Big title</h1>
     </span>
     <!-- active -->
-    <ul class="nav justify-content-end navigation">
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Event</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Accesories</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Apparel</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Feature Items</a>
-    </ul>
+    <div class="large-menu">
+      <ul class="nav justify-content-end navigation">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accesories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Apparel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feature Items</a>
+      </ul>
+    </div>
+    <!-- mediaquery -->
+    <div class="small-menu">
+      <select>
+        <option>Event</option>
+        <option>Accesories</option>
+        <option>Apparel</option>
+        <option>Feature Items</option>
+      </select>
+    </div>
+    <!-- mediaquery -->
   </nav>
 
   <!-- divisor -->
   <!-- <div class="m-1"></div> -->
+  <div class="carrusell-slide">
+    <div class="slideshow-container grey_bg shadow  mb-2 ">
 
-  <div class="slideshow-container grey_bg shadow  mb-2 ">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <!-- <img src="http://placekitten.com/g/1000/400" width="100%"> -->
+        <img src="assets/img/400.jpg" width="100%">
+        <div class="text">Caption Text</div>
+      </div>
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 3</div>
-      <!-- <img src="http://placekitten.com/g/1000/400" width="100%"> -->
-      <img src="assets/img/400.jpg" width="100%">
-      <div class="text">Caption Text</div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <!-- <img src="http://placekitten.com/1000/400" width="100%"> -->
+        <img src="assets/img/400_c.jpg" width="100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <!-- <img src="http://placekitten.com/g/1000/600" width="100%"> -->
+        <img src="assets/img/600.jpg" width="100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+      <span class="next" onclick="plusSlides(1)">&#10095;</span>
+
     </div>
+    <br>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 3</div>
-      <!-- <img src="http://placekitten.com/1000/400" width="100%"> -->
-      <img src="assets/img/400_c.jpg" width="100%">
-      <div class="text">Caption Two</div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 3</div>
-      <!-- <img src="http://placekitten.com/g/1000/600" width="100%"> -->
-      <img src="assets/img/600.jpg" width="100%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-    <span class="next" onclick="plusSlides(1)">&#10095;</span>
-
   </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-  <div class="container">
-    <!-- carrussel -->
+  <!-- carrussel -->
+  <div class="container-fluid">
     <!-- <div class="w-auto p-3" style="background-color: #eee;"></div> -->
     <!-- divisor -->
     <div class="m-4  p-2"></div>
 
     <!-- product  -->
     <div class="row">
-      <section class="text-wrap section-text">
+      <section class="text-wrap section-text mx-3">
         <h2>Intro Copy Headline</h2>
         <p>Lorem ipsum dolor sit amet, dui eros quod, lobortis suspendisse, praesent amet nulla malesuada etiam est
           diam,
           elit eu in suscipit. Viverra congue dui aliquam dignissim, pede maecenas, iaculis eu torquent vitae velit et,
           velit amet lacus nunc, vitae magna etiam tempus</p>
         <p>Amet, dui eros quod, lobortis suspendisse, praesent amet nulla malesuada etiam est diam</p>
-        <div class="w-auto p-3" style="background-color: #eee;"></div>
+        <div class="w-auto p-3"></div>
       </section>
 
-      <div class="col-lg-3 ">
-        <div class="card  shadow">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <svg class="bd-placeholder-img img-fluid" width="100%" height="300" xmlns="http://www.w3.org/2000/svg"
+      <div class="col-md-3 col-6">
+        <div class="card shadow">
+          <svg class="bd-placeholder-img img-fluid" width="100%" height="200" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
               dy=".3em">140x140</text>
           </svg>
           <div class="card-body section-text">
-            <h2>Item</h2>
+            <h2 class="text-item">Item</h2>
             <p>Item Category </p>
             <p> <strong>$</strong><span>88.00</span></p>
           </div>
         </div>
         <div class="m-1 p-1"></div>
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-md-4 -->
 
-      <div class="col-lg-3">
+      <div class="col-md-3 col-6">
         <div class="card shadow">
           <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <svg class="bd-placeholder-img img-fluid" width="100%" height="300" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img img-fluid" width="100%" height="200" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
@@ -159,11 +172,11 @@
           </div>
         </div>
         <div class="m-1  p-1"></div>
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-md-4 -->
 
-      <div class="col-lg-3">
+      <div class="col-md-3 col-6">
         <div class="card shadow">
-          <svg class="bd-placeholder-img img-fluid" width="100%" height=" 300" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img img-fluid" width="100%" height=" 200" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
@@ -178,10 +191,10 @@
         <div class="m-1  p-1"></div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-md-3 col-6">
         <div class="card shadow">
           <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <svg class="bd-placeholder-img img-fluid" width="100%" height=" 300" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img img-fluid" width="100%" height="200" xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
@@ -194,7 +207,7 @@
           </div>
         </div>
         <div class="m-1  p-1"></div>
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-md-4 -->
 
     </div>
 
@@ -208,7 +221,7 @@
   <!-- footer -->
   <nav class="navbar  navbar-light primary_bg footer-text">
     <div class="row">
-      <div class="col-3">
+      <div class="col-sm-3">
         <h4 class="footer-text"><strong>Quick Links</strong></h4>
         <ul class="nav flex-column ">
           <li class="nav-item ">
@@ -226,8 +239,8 @@
         </ul>
       </div>
 
-      <div class="col-6">
-        <h4 class="footer-text"><strong>Announcements /Promoted Contents</strong></h4>
+      <div class="col-sm-6">
+        <h4 class="footer-text"><strong>Announcements / Promoted Contents</strong></h4>
         <span>
           Lorem ipsum dolor sit amet, dui eros quod, lobortis suspendisse, praesent amet nulla malesuada etiam est diam,
           elit eu in suscipit. Viverra congue dui aliquam dignissim, pede maecenas, iaculis eu torquent vitae velit et,
@@ -235,7 +248,7 @@
         </span>
       </div>
 
-      <div class="col-3 text-right">
+      <div class="col-sm-3 text-right">
         <h4 class="footer-text"><strong>Comming Soon</strong></h4>
         <img src="assets/img/900.jpg" width="200" alt="cat" />
       </div>
