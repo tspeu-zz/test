@@ -1,144 +1,88 @@
 <!-- SHOPPING CART -->
-<div class="card shopping-case">
- <div class="card-header">
-  <strong> Buy (1 item)</strong>
- </div>
- <div class="card-body">
-  <div class="d-flex bd-highlight  card-title">
-   <div class=" bd-highlight">
-    <h5>Special title treatment</h5>
-   </div>
-   <div class="bd-highlight"></div>
-   <div class="ml-auto  bd-highlight">
-    <a href="" class="text-secondary">
-     <i class="fas fa-info-circle text-secondary"></i>more Info</a>
-   </div>
-  </div>
+<!-- MODAL shopping-cart fade-->
+<div class="modal" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable" role="document">
 
-  <div class="row">
-   <div class="col-md-2">
-    <img src="assets/img/900.jpg" alt="item" width="100" height="100">
-   </div>
-   <div class="col-md-6">
-    <ul class="lista">
-     <li>
-      <h3>Item Name (just by me)</h3>Item
-     </li>
-     <li><span class="badge badge-info">best by article</span> in some category</li>
-     <li>
-      <p>In stock</p>
-     </li>
-     <li>
-      <p><strong>Free shipping</strong> available </p>
-     </li>
-     <li>
-      <div class="d-flex flex-row bd-highlight mb-3">
-       <div class="p-2 bd-highlight"><a href="">Delete</a></div>
-       <div class="p-2 bd-highlight"><a href="">ser mor similar items</a></div>
-       <div class="p-2 bd-highlight"><a href="">save for later</a></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Shooping Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-     </li>
-    </ul>
-   </div>
-   <div class="col-md-2">
-    <h3>Cantidad 1</h3>
-    <span>
-     <a href=""> see description</a>
-    </span>
-   </div>
-   <div class="col-md-2">
-    <h2>$ 7,99</h2>
-   </div>
-  </div>
-  <!--row  -->
-  <div class="d-flex bd-highlight  card-title">
-   <div class=" bd-highlight">
-    <button type="button" class="btn btn-outline-danger">Delete Item</button>
-   </div>
-   <div class="bd-highlight"></div>
-   <div class="ml-auto  bd-highlight">
-    <button type="button" class="btn btn-outline-success">
-     <i class="fas fa-shopping-cart text-secondary"></i>
-     continue shopping</button>
-   </div>
-  </div>
- </div>
-</div>
-<!-- SHOPPING CART -->
+      <div class="modal-body">
+        <!-- SHOPPING CART -->
+        <div class="card shopping-case">
+          <div class="card-header">
+            <strong> Buy (1 item)</strong>
+          </div>
+          <div class="card-body">
+            <div class="row card-title modal-item">
+              <div class="col-sm-6 bd-highlight ">
+                <p>Item Title</p>
+              </div>
+              <div class="col-sm-3 bd-highlight">
+                <p>Cantidad</p>
+              </div>
+              <div class="col-sm-3 bd-highlight">
+                <p>Price</p>
+              </div>
+            </div>
 
-<div class="dropdown">
- <a class="btn btn-lg btn-outline-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-  aria-haspopup="true" aria-expanded="false">
-  <i class="fas fa-shopping-cart color_grey"></i>
- </a>
+            <!--modal item  -->
+            <div class="d-flex bd-highlight  card-title  modal-item">
+              <div class=" bd-highlight">
+                <img src="assets/img/60.jpg" width="100%">
+                <p>Item Name</p>
+              </div>
+              <div class=" ml-auto bd-highlight justify-content-end">
+                <ul>
+                  <li>
+                    <div class="d-flex flex-row mb-3 item-group">
+                      <button type="button" class="btn secondary_bg text_light btn-sm mx-1"
+                        onclick="increaseItem()">+</button>
+                      <h5 class="p-2" id="amountItems" class="item-price"> 0 </h5>
+                      <button type="button" class="btn secondary_bg text_light btn-sm mx-1"
+                        onclick="decreaseItem()">-</button>
+                    </div>
+                  </li>
+                  <li><span class="badge secondary_bg">In stock</span></li>
+                </ul>
+                <div class="p-2 bd-highlight">
+                </div>
+              </div>
+              <div class="  bd-highlight">
+                <h5>$<span id="priceItem">0</span></h5>
+              </div>
+            </div>
 
- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-  <!-- SHOPPING CART -->
-  <div class="card shopping-case">
-   <div class="card-header">
-    <strong> Buy (1 item)</strong>
-   </div>
-   <div class="card-body">
-    <div class="d-flex bd-highlight  card-title">
-     <div class=" bd-highlight">
-      <h5>Special title treatment</h5>
-     </div>
-     <div class="bd-highlight"></div>
-     <div class="ml-auto  bd-highlight">
-      <a href="" class="text-secondary">
-       <i class="fas fa-info-circle text-secondary"></i>more Info</a>
-     </div>
-    </div>
+            <div class="d-flex bd-highlight  card-title">
+              <div class=" bd-highlight">
+                <p><strong>Free shipping</strong> available</p>
+              </div>
+              <div class="bd-highlight"></div>
+              <div class="ml-auto  bd-highlight">
+                <button type="button" class="btn btn-outline-danger">Delete Item</button>
+              </div>
+            </div>
+            <hr>
+            <!-- item  -->
 
-    <div class="row">
-     <div class="col-md-2">
-      <img src="assets/img/900.jpg" alt="item" width="100" height="100">
-     </div>
-     <div class="col-md-6">
-      <ul class="lista">
-       <li>
-        <h3>Item Name (just by me)</h3>Item
-       </li>
-       <li><span class="badge badge-info">best by article</span> in some category</li>
-       <li>
-        <p>In stock</p>
-       </li>
-       <li>
-        <p><strong>Free shipping</strong> available </p>
-       </li>
-       <li>
-        <div class="d-flex flex-row bd-highlight mb-3">
-         <div class="p-2 bd-highlight"><a href="">Delete</a></div>
-         <div class="p-2 bd-highlight"><a href="">ser mor similar items</a></div>
-         <div class="p-2 bd-highlight"><a href="">save for later</a></div>
+          </div> <!-- card-body -->
+        </div> <!-- card  -->
+      </div> <!-- SHOPPING CART -->
+      <div class="modal-footer d-flex">
+        <div class=" bd-highlight">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-       </li>
-      </ul>
-     </div>
-     <div class="col-md-2">
-      <h3>Cantidad 1</h3>
-      <span>
-       <a href=""> see description</a>
-      </span>
-     </div>
-     <div class="col-md-2">
-      <h2>$ 7,99</h2>
-     </div>
-    </div>
-    <!--row  -->
-    <div class="d-flex bd-highlight  card-title">
-     <div class=" bd-highlight">
-      <button type="button" class="btn btn-outline-danger">Delete Item</button>
-     </div>
-     <div class="bd-highlight"></div>
-     <div class="ml-auto  bd-highlight">
-      <button type="button" class="btn btn-outline-success">
-       <i class="fas fa-shopping-cart text-secondary"></i>
-       continue shopping</button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <!-- SHOPPING CART -->
- </div>
-</div>
+        <div class="bd-highlight"></div>
+        <div class="ml-auto  bd-highlight">
+          <button type="button" class="btn btn-outline-success">
+            <i class="fas fa-shopping-cart text-secondary modal-item"></i>
+            continue shopping</button>
+        </div>
+      </div>
+    </div> <!-- modal-content -->
+  </div> <!-- modal-dialog -->
+</div> <!-- MODAL  -->
