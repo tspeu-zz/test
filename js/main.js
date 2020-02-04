@@ -1,10 +1,17 @@
 // jquery
 $(document).ready(function () {
- $('[data-toggle="popover"]').popover()
+ // 
+ $('[data-toggle="popover"]').popover();
+ // open modal
+ $('#exampleModal').trigger('focus');
+ // alert 
+ // $('.alert').alert();
 
- $('#exampleModal').trigger('focus')
 
 })
+function showAlert() {
+ $('#alert-dialog').show();
+}
 
 //carrussell  ES6
 let slideIndex = 1;
