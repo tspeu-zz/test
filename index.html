@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-  <link href="css/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+  <link href="./css/css/all.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.scss">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
   <script defer src="js/jquery-3.4.1.slim.min.js"></script>
   <script defer src="js/popper.min.js"></script>
@@ -28,7 +28,7 @@
     </span>
 
     <form class="form-inline">
-      <span mx-5 class="badge badge-light text_secondary mx-1 ">12</span>
+      <span mx-5 class="badge badge-light text_secondary mx-1" id="badgeItem">0</span>
 
       <button type="button" class="btn btn-sm btn-outline-light mx-1" data-toggle="modal" data-target="#staticBackdrop">
         <i class="fas fa-shopping-cart color_grey"></i>
@@ -70,20 +70,18 @@
           <a class="nav-link" href="#">Feature Items</a>
       </ul>
     </div>
-    <!-- mediaquery -->
     <div class="small-menu">
-      <select>
-        <option>Event</option>
-        <option>Accesories</option>
-        <option>Apparel</option>
-        <option>Feature Items</option>
+
+      <select class="custom-select my-2 " id="inputGroupSelect01">
+        <option selected>Event</option>
+        <option value="1">Accesories</option>
+        <option value="2">Apparel</option>
+        <option value="3">Feature Items</option>
       </select>
     </div>
-    <!-- mediaquery -->
   </nav>
 
   <!-- divisor -->
-  <!-- <div class="m-1"></div> -->
   <div class="carrusell-slide">
     <div class="slideshow-container grey_bg shadow  mb-2 ">
 
@@ -120,10 +118,8 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </div>
-  <!-- carrussel -->
+  <!--end carrussel -->
   <div class="container-fluid">
-    <!-- <div class="w-auto p-3" style="background-color: #eee;"></div> -->
-    <!-- divisor -->
     <div class="m-4  p-2"></div>
 
     <!-- product  -->
@@ -153,7 +149,7 @@
           </div>
         </div>
         <div class="m-1 p-1"></div>
-      </div><!-- /.col-md-4 -->
+      </div>
 
       <div class="col-md-3 col-6">
         <div class="card shadow">
@@ -171,7 +167,7 @@
           </div>
         </div>
         <div class="m-1  p-1"></div>
-      </div><!-- /.col-md-4 -->
+      </div>
 
       <div class="col-md-3 col-6">
         <div class="card shadow">
@@ -206,7 +202,7 @@
           </div>
         </div>
         <div class="m-1  p-1"></div>
-      </div><!-- /.col-md-4 -->
+      </div>
 
     </div>
 
@@ -214,8 +210,6 @@
   </div>
 
   <div class="m-auto  p-5"></div>
-  <div class="w-auto p-3"></div>
-
 
   <!-- footer -->
   <nav class="navbar  navbar-light primary_bg footer-text">
@@ -260,7 +254,7 @@
     </span>
     <span>support jm_b@suport.com</span>
   </div>
-  <!-- fixed-bottom -->
+  <!-- end footer -->
 
   <!-- MODAL shopping-cart fade-->
   <div class="modal" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
@@ -292,110 +286,34 @@
                   <p>Price</p>
                 </div>
               </div>
-              <!-- item  320-->
-              <div class="d-flex bd-highlight card-title modal-small">
-                <div class=" bd-highlight">
-                  <img src="assets/img/60_2.jpg" width="100%">
-                  <p>Item Name</p>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 10</h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
-                  </div>
-                  <h6>$ 1,99</h6>
-                </div>
-              </div>
-              <!-- item  320-->
 
-              <div class="row modal-item">
-                <div class="col-sm-2">
-                  <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
+              <!--modal item  -->
+              <div class="d-flex bd-highlight  card-title  modal-item">
+                <div class=" bd-highlight">
                   <img src="assets/img/60.jpg" width="100%">
-                </div>
-                <div class="col-sm-4">
-                  <ul class="lista">
-                    <li>
-                      <p>Item Name</p>
-                    </li>
-                    <li><span class="badge secondary_bg">In stock</span></li>
-                  </ul>
-                </div>
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 10 </h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
-                  </div>
-                </div>
-
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">
-                      <h5>$ 1,99</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex bd-highlight  card-title">
-                <div class=" bd-highlight">
-                  <p><strong>Free shipping</strong> available</p>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <button type="button" class="btn btn-outline-danger">Delete Item</button>
-                </div>
-              </div>
-              <hr>
-              <!-- item  -->
-              <!-- item  320-->
-              <div class="d-flex bd-highlight card-title  modal-small">
-                <div class=" bd-highlight">
-                  <img src="assets/img/60_2.jpg" width="100%">
                   <p>Item Name</p>
                 </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 1</h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
-                  </div>
-                  <h6>$ 2,99</h6>
-                </div>
-              </div>
-              <!-- item  320-->
-              <div class="row modal-item">
-                <div class="col-sm-2">
-                  <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
-                  <img src="assets/img/60_2.jpg" width="100%">
-                </div>
-                <div class="col-sm-4">
-                  <ul class="lista">
+                <div class=" ml-auto bd-highlight justify-content-end">
+                  <ul>
                     <li>
-                      <p>Item Name</p>
+                      <div class="d-flex flex-row mb-3 item-group">
+                        <button type="button" class="btn secondary_bg text_light btn-sm mx-1"
+                          onclick="increaseItem()">+</button>
+                        <h5 class="p-2" id="amountItems" class="item-price"> 0 </h5>
+                        <button type="button" class="btn secondary_bg text_light btn-sm mx-1"
+                          onclick="decreaseItem()">-</button>
+                      </div>
                     </li>
                     <li><span class="badge secondary_bg">In stock</span></li>
                   </ul>
-                </div>
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 1 </h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
+                  <div class="p-2 bd-highlight">
                   </div>
                 </div>
-
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">
-                      <h5>$ 2,99</h5>
-                    </div>
-                  </div>
+                <div class="  bd-highlight">
+                  <h5>$<span id="priceItem">0</span></h5>
                 </div>
               </div>
+
               <div class="d-flex bd-highlight  card-title">
                 <div class=" bd-highlight">
                   <p><strong>Free shipping</strong> available</p>
@@ -407,63 +325,7 @@
               </div>
               <hr>
               <!-- item  -->
-              <!-- item  320-->
-              <div class="d-flex bd-highlight card-title  modal-small">
-                <div class=" bd-highlight">
-                  <img src="assets/img/60_2.jpg" width="100%">
-                  <p>Item Name</p>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 1</h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
-                  </div>
-                  <h6>$ 5,99</h6>
-                </div>
-              </div>
-              <!-- item  320-->
-              <div class="row modal-item">
-                <div class="col-sm-2">
-                  <!-- <img src="http://placekitten.com/g/60/60" class="img-circle" /> -->
-                  <img src="assets/img/60.jpg" width="100%">
-                </div>
-                <div class="col-sm-4">
-                  <ul class="lista">
-                    <li>
-                      <p>Item Name</p>
-                    </li>
-                    <li><span class="badge secondary_bg">In stock</span></li>
-                  </ul>
-                </div>
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row mb-3">
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">+</button>
-                    <h5 class="p-1"> 1 </h5>
-                    <button type="button" class="btn secondary_bg text_light btn-sm mx-1">-</button>
-                  </div>
-                </div>
 
-                <div class="col-sm-3">
-                  <div class="d-flex flex-row bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">
-                      <h5>$ 5,99</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex bd-highlight  card-title">
-                <div class=" bd-highlight">
-                  <p><strong>Free shipping</strong> available</p>
-                </div>
-                <div class="bd-highlight"></div>
-                <div class="ml-auto  bd-highlight">
-                  <button type="button" class="btn btn-outline-danger">Delete Item</button>
-                </div>
-              </div>
-              <hr>
-              <!-- item  -->
             </div> <!-- card-body -->
           </div> <!-- card  -->
         </div> <!-- SHOPPING CART -->

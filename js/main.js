@@ -1,29 +1,26 @@
-
+// jquery
 $(document).ready(function () {
  $('[data-toggle="popover"]').popover()
 
  $('#exampleModal').trigger('focus')
 
-
-
 })
 
+//carrussell  ES6
+let slideIndex = 1;
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
+let plusSlides = (n) => {
  showSlides(slideIndex += n);
-}
+};
 
-function currentSlide(n) {
+let currentSlide = () => {
  showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
- var i;
- var slides = document.getElementsByClassName("mySlides");
- var dots = document.getElementsByClassName("dot");
+const showSlides = (n) => {
+ let i;
+ let slides = document.getElementsByClassName("mySlides");
+ let dots = document.getElementsByClassName("dot");
  if (n > slides.length) { slideIndex = 1 }
  if (n < 1) { slideIndex = slides.length }
  for (i = 0; i < slides.length; i++) {
@@ -34,4 +31,38 @@ function showSlides(n) {
  }
  slides[slideIndex - 1].style.display = "block";
  dots[slideIndex - 1].className += " active";
+};
+
+showSlides(slideIndex);
+
+//items shopping-cart;
+
+let items = 1;
+let itemBadge = document.getElementById('badgeItem');
+let price = 1.99;
+let itemPrice = document.getElementById('priceItem');
+let itemAmount = document.getElementById('amountItems');
+itemAmount.innerHTML = items;
+itemPrice.innerHTML = price;
+badgeItem.innerHTML = items;
+
+const increaseItem = () => {
+
+ if (items <= 0) {
+  items = 0;
+ }
+ items++;
+
+ itemAmount.innerHTML = items;
+ let priceI = items * price <= 0 ? 0 : items * price;
+ itemPrice.innerHTML = priceI;
+ badgeItem.innerHTML = items;
+
+}
+const decreaseItem = () => {
+ items--;
+ itemAmount.innerHTML = items <= 0 ? 0 : items--;
+ let priceI = items * price <= 0 ? 0 : items * price;
+ itemPrice.innerHTML = priceI;
+ badgeItem.innerHTML = items;
 }
